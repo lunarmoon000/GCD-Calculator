@@ -58,9 +58,10 @@ while True:
     try:
         num1 = int(thing_array[0])
         num2 = int(thing_array[1])
-        numbers_given = True
+        if(num1 > 0 and num2 > 0):
+            numbers_given = True
         break
     except:
-        print("one or more of these numbers aren't numbers! try again!")
+        print("at least one of those is not a valid number! try again!")
 if numbers_given:
     gcd(num1, num2)
